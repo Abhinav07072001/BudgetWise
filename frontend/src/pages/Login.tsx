@@ -71,6 +71,7 @@ export default function Login() {
 
       // ✅ save user and trigger navbar update immediately
       localStorage.setItem("user", JSON.stringify(res.data.user));
+      localStorage.setItem("user", JSON.stringify(res.data.user));
       window.dispatchEvent(new Event("userChanged")); // 🔄 updates navbar instantly
 
       // ✅ redirect to /expenses after short delay
