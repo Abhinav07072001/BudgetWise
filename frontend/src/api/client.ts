@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:8080", // backend
+  baseURL:  "https://budgetwise-api-r18v.onrender.com", // backend
   withCredentials: true,             // allow cookies
 });
