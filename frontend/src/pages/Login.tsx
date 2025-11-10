@@ -70,7 +70,7 @@ export default function Login() {
       setMsg("✅ Logged in as " + res.data.user.name);
 
       // ✅ save user and trigger navbar update immediately
-      localStorage.setItem("user", JSON.stringify(res.data.user));
+      localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       window.dispatchEvent(new Event("userChanged")); // 🔄 updates navbar instantly
 
